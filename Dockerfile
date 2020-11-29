@@ -10,7 +10,7 @@ RUN su - && apt-get install -y wget vim git
 RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh && bash ~/miniconda.sh -b -p $HOME/miniconda && $HOME/miniconda/bin/conda init
 
 # Installing packages
-RUN $HOME/miniconda/bin/conda install -y tensorflow matplotlib pandas jupyter -n base
+RUN $HOME/miniconda/bin/conda install -y tensorflow-gpu matplotlib pandas jupyter -n base
 
 RUN $HOME/miniconda/bin/jupyter notebook --generate-config \
   && echo "c = get_config()" >> ~/.jupyter/jupyter_notebook_config.py \
