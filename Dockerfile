@@ -17,7 +17,7 @@ RUN $HOME/miniconda/bin/jupyter notebook --generate-config \
   && echo "c.NotebookApp.ip = '0.0.0.0'" >> ~/.jupyter/jupyter_notebook_config.py \
   && echo "c.NotebookApp.open_browser = False" >> ~/.jupyter/jupyter_notebook_config.py \
   && echo "c.NotebookApp.port = 8888" >> ~/.jupyter/jupyter_notebook_config.py \
-  && echo "c.NotebookApp.password = 'sha1:e0bbf67da8b9:6b86ddf8dc63701729c25b66a800476ed8a90669'" >> ~/.jupyter/jupyter_notebook_config.py
+  && echo "c.NotebookApp.password = 'sha1:a8a01364a4a5:0b782854dff4a2d5c07daaa998cb92cdd1fdb5d3'" >> ~/.jupyter/jupyter_notebook_config.py
 
 RUN mkdir $HOME/notebooks
 WORKDIR /root/notebooks
